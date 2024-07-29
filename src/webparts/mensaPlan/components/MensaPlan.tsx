@@ -18,7 +18,7 @@ export default class MensaPlan extends React.Component<IMensaPlanProps, {}> {
             </div>
           </div>
           <div className={styles.mensaDateFlex}>
-            <div id={styles.date1}>Mo 18.03</div>
+            <div id={styles.date1} className={styles.selectedDate}>Mo 18.03</div>
             <div id={styles.date2}>Di 19.03</div>
             <div id={styles.date3}>Mi 20.03</div>
           </div>
