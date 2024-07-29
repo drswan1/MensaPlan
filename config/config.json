@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mensa-plan-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mensaPlan/MensaPlanWebPart.js",
+          "manifest": "./src/webparts/mensaPlan/MensaPlanWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MensaPlanWebPartStrings": "lib/webparts/mensaPlan/loc/{locale}.js"
+  }
+}

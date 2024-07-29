@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mensa-plan-client-side-solution",
+    "id": "9ee99ec2-7e91-4ef4-8c6e-f7ba478619ba",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "mensa-plan description"
+      },
+      "longDescription": {
+        "default": "mensa-plan description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "mensa-plan Feature",
+        "description": "The feature that activates elements of the mensa-plan solution.",
+        "id": "c17b3f8c-2b18-4a6a-8503-be4dbcaf35b2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/mensa-plan.sppkg"
+  }
+}
