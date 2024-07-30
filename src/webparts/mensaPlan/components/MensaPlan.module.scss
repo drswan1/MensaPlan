@@ -11,8 +11,8 @@
 }
 
 .container{
-  width: 45.5rem;
-  height: 29.49119rem;
+  width: 41.5rem;
+  height: 25.49119rem;
   border-radius: 0.435rem;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -42,7 +42,7 @@
 
 .mensaLocationName {
   color: #FFF;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-left: 1rem;
 }
@@ -77,12 +77,58 @@
   box-shadow: 1.3919156789779663px -2.7838313579559326px 3.2659475803375244px rgba(0, 0, 0, 0.10);
 }
 
-
-
 .mensaMenuFlex {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 66.66%;
+  width: 100%;
 }
+
+.veggieMenuContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.herzhaftMenuContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.menuTitle {
+  color: #0D1C0D;
+  font-size: 21.21;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-top: 2rem;
+  margin-left: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.menuTime {
+  color: #0D1C0D;
+  font-size: 19.28;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+
+.menuItems {
+  width: 160.50%;
+  height: 48.7%;
+  border: #D1E8D1 1px solid;
+  margin-top: 1.2rem;
+  margin-left: 1.8rem;
+}
+
+
+
+
 
 
 .links {
