@@ -8,6 +8,7 @@
   &.teams {
     font-family: $ms-font-family-fallbacks;
   }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
@@ -63,7 +64,7 @@
   flex: 1;
   height: 100%;
   color: #115740;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 600;
   align-items: center;
   justify-content: center;
@@ -72,7 +73,7 @@
 
 .selectedDate {
   background: #ffffff;
-  color: #1e1e1e;
+  color: #000000 !important;	
   border-top-right-radius: 1.25rem;
   box-shadow: 1.3919156789779663px -2.7838313579559326px 3.2659475803375244px rgba(0, 0, 0, 0.10);
 }
@@ -85,18 +86,19 @@
   width: 100%;
 }
 
-.veggieMenuContainer {
+#veggieMenuContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  flex: 1;
+  width:50%;
+  
 }
 
-.herzhaftMenuContainer {
+#herzhaftMenuContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  flex: 1;
+  width:50%;
 }
 
 .menuTitle {
@@ -119,13 +121,36 @@
 }
 
 .menuItems {
-  width: 160.50%;
-  height: 48.7%;
+  display: flex;
+  flex-direction: column;
+  height: 45%;
   border: #D1E8D1 1px solid;
   margin-top: 1.2rem;
   margin-left: 1.8rem;
+  width: 70%;
+  border-radius:0.2rem;
+  padding: 0.96413rem;
+  
 }
 
+.menuItem{
+  color: #0D1C0D;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.20519rem; /* 125% */
+}
+
+.menuPrice{
+  color: #115740;
+  font-feature-settings: 'dlig' on;
+  font-size: 1.34625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.26544rem; /* 87.5% */
+  align-self: flex-end;
+  margin-top: 1.5rem;
+}
 
 
 

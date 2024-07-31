@@ -3,6 +3,7 @@ import styles from './MensaPlan.module.scss';
 import type { IMensaPlanProps } from './IMensaPlanProps';
 
 
+
 export default class MensaPlan extends React.Component<IMensaPlanProps, {}> {
   public render(): React.ReactElement<IMensaPlanProps> {
 
@@ -18,20 +19,32 @@ export default class MensaPlan extends React.Component<IMensaPlanProps, {}> {
             </div>
           </div>
           <div className={styles.mensaDateFlex}>
-            <div id={styles.date1} className={styles.selectedDate}>Mo 18.03</div>
-            <div id={styles.date2}>Di 19.03</div>
-            <div id={styles.date3}>Mi 20.03</div>
+            <div id={styles.date1} className={styles.selectedDate}>Mi, 31.07.</div>
+            <div id={styles.date2}>Do, 01.08.</div>
+            <div id={styles.date3}>Fr, 02.08.</div>
           </div>
           <div className={styles.mensaMenuFlex}>
             <div id={styles.veggieMenuContainer}>
               <div className={styles.menuTitle}>Menü veggie</div>
               <div className={styles.menuTime}>11:30-14:00 Uhr</div>
-              <div className={styles.menuItems}></div>
+              <div className={styles.menuItems}>
+                <div className={styles.menuItem}>Klare Gemüsesuppe mit Einlage</div>
+                <div className={styles.menuItem} style={{ fontWeight: 'bolder' }}>Penne Linsenbolognese VEGAN</div>
+                <div className={styles.menuItem}>frischer Parmesan</div>
+                <div className={styles.menuItem}>(A, C, F, G, L)</div>
+                <div className={styles.menuPrice}>€6.20</div>
+              </div>
             </div>
             <div id={styles.herzhaftMenuContainer}>
               <div className={styles.menuTitle}>Menü herzhaft</div>
               <div className={styles.menuTime}>11:30-14:00 Uhr</div>
-              <div className={styles.menuItems}></div>
+              <div className={styles.menuItems}>
+                <div className={styles.menuItem}>Klare Gemüsesuppe mit Einlage</div>
+                <div className={styles.menuItem} style={{ fontWeight: 'bolder' }}>Hühnerragout AT</div>
+                <div className={styles.menuItem}>mit frischen Kräutern Reis</div>
+                <div className={styles.menuItem}>(A, C, F, G, L, O)</div>
+                <div className={styles.menuPrice}>€7.20</div>
+              </div>
             </div>
           </div>	     
         </div> 
