@@ -6,7 +6,6 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'MensaPlanWebPartStrings';
 import MensaPlan from './components/MensaPlan';
@@ -22,6 +21,12 @@ export default class MensaPlanWebPart extends BaseClientSideWebPart<IMensaPlanWe
   private _environmentMessage: string = '';
 
   public render(): void {
+    const url: new URL(this.context.pageContext.web.absoluteUrl);
+    const siteID = `${url.hostname},${this.context.pageContext.site.id},${this.context.pageContext.web.id}`;	
+
+
+
+
     const element: React.ReactElement<IMensaPlanProps> = React.createElement(
       MensaPlan,
       {
@@ -71,23 +76,6 @@ export default class MensaPlanWebPart extends BaseClientSideWebPart<IMensaPlanWe
     return Promise.resolve(this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentSharePoint : strings.AppSharePointEnvironment);
   }
 
-  protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void {
-    if (!currentTheme) {
-      return;
-    }
-
-    this._isDarkTheme = !!currentTheme.isInverted;
-    const {
-      semanticColors
-    } = currentTheme;
-
-    if (semanticColors) {
-      this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-      this.domElement.style.setProperty('--link', semanticColors.link || null);
-      this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
-    }
-
-  }
 
   protected onDispose(): void {
     ReactDom.unmountComponentAtNode(this.domElement);
